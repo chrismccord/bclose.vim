@@ -1,3 +1,8 @@
+if exists('g:loaded_bclose')
+    finish
+endif
+let g:loaded_bclose = 1
+
 "here is a more exotic version of my original Bclose script
 "delete the buffer; keep windows; create a scratch buffer if no buffers left
 function s:Bclose(kwbdStage)
